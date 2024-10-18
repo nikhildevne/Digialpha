@@ -37,5 +37,5 @@ module.exports = (app) => {
     }
   };
 
-  app.put("/users/:id", deleteUser);
+  app.delete("/users/:id", deleteUser);
 };

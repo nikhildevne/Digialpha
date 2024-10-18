@@ -15,23 +15,23 @@ const updateUser = async (req, res) =>{
         const {id} = req.params;
         const { firstName, lastName, emailId, phone, role } = req.body;
 
-        if(role && role !== 'Admin') return res.send({
+        if(req.body.role && req.userparam && req.userparam.role !== 'Admin') return res.send({
             message : message.roleException.message,
             status : message.statusCode.success,
         })
 
-        const { error, value } = validate.userInfo.validate(req.body);
+        // const { error, value } = validate.userInfo.validate(req.body);
 
-        console.log(value)
+        // console.log(value)
 
-        if (error) {
-            return res.send({ 
-                status : message.statusCode.invalid,
-                message: error.details[0].message 
-            });
-        }
+        // if (error) {
+        //     return res.send({ 
+        //         status : message.statusCode.invalid,
+        //         message: error.details[0].message 
+        //     });
+        // }
 
-        let updateResp = await usermanagement.findByIdAndUpdate(id,{ firstName, lastName, emailId, phone },{new:true});
+        let updateResp = await usermanagement.findByIdAndUpdate(id,{ firstName, lastName, emailId, phone, role },{new:true});
 
         if(!updateResp){
             return res.send({

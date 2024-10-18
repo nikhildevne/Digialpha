@@ -6,8 +6,7 @@ require('dotenv').config()
 const authenticateUser = require('./midleware/authenticate')
 
 mongoose.connect(process.env.MONGODB_STRING, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+
 })
 
 app.use(express.json())

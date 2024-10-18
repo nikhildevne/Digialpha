@@ -16,7 +16,7 @@ module.exports = (app) => {
         let user = await usermanagement.findOne({_id:id}).exec();
 
         if(!user) return res.send({
-            message : message.success.message,
+            message : message.datanotFound.message,
             status : message.statusCode.success,
             data : user
         });

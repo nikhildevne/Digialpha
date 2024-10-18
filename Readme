@@ -1,0 +1,12 @@
+1. Clone repository
+2. run 'npm install' command
+3. run 'node app.js'
+
+connection with mongodb
+
+install mongodb compass
+connect with localhost
+
+test api using postman collection documentation link is bellow
+
+https://api.postman.com/collections/39090930-32ad4060-dc2a-4966-9bcf-6fbebae1ab49?access_key=PMAT-01JADFJ8FVPT9H8VDVGYQQQPS1

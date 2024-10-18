@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken');
  * @returns 
  */
 async function authenticateUser(req,res,next) {
-    if(req.path == '/login'){
+    if(req.path == '/login' || req.path == '/'){
         return next();
     }
     const header = req.headers['authorization'];

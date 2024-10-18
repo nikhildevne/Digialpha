@@ -1,5 +1,13 @@
 const jwt = require('jsonwebtoken');
 
+
+/**
+ * Authentication Midleware
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ * @returns 
+ */
 async function authenticateUser(req,res,next) {
     if(req.path == '/login'){
         return next();

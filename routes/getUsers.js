@@ -4,7 +4,7 @@ const message = require("../common/errors")
 module.exports = (app) => {
 
     /**
-     * gets users by id
+     * gets users
      * @param {*} req 
      * @param {*} res 
      * @returns 
@@ -13,6 +13,7 @@ module.exports = (app) => {
         try {
             const { firstname, lastname, emailId, phone, role } = req.query
 
+            // Filter For Users
             let condition = {}
             if(firstname) condition.firstname = firstname
             if(lastname) condition.lastname = lastname

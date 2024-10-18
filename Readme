@@ -10,3 +10,9 @@ connect with localhost
 test api using postman collection documentation link is bellow
 
 https://api.postman.com/collections/39090930-32ad4060-dc2a-4966-9bcf-6fbebae1ab49?access_key=PMAT-01JADFJ8FVPT9H8VDVGYQQQPS1
+
+
+Remaining Things
+
+1. Duplicate user Validation.
+  if we found any duplicate emailid or phone while registration we can just return duplicate message response.

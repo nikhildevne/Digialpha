@@ -1,8 +1,8 @@
 ################################          APIs Hosted on AWS EC2 environ using AWS Beanstalk used services EC2, IAM, AWS PIPELINE #################################
 ###############################            EC2 Host url ::: http://digialpha.us-east-1.elasticbeanstalk.com/                 #####################################
 
-####################     Master User Notw : Dont Delete This user  #################
-{
+####################     Master User Note : Dont Delete This user  #################
+{                   
 "firstName":"Master",
 "lastName":"Admin",
 "emailId":"masteradmin@yahoo.com",
@@ -11,7 +11,7 @@
 "__v":{"$numberInt":"0"},
 "password":"Admin@123"
 }
-
+!@#$!@#$         Login with master user to generate jwt token, add in bearer token in postman while calling apis in postman
 ################################   used Atlas Mongodb URL to connect with Database and used Mongoose orm ##############################
 
 

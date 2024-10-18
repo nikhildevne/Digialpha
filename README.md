@@ -1,2 +1,0 @@
-# Digialpha
-Nodejs Project

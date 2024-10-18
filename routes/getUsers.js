@@ -11,8 +11,16 @@ module.exports = (app) => {
      */
     const getUserInformation = async (req, res) => {
         try {
+            const { firstname, lastname, emailId, phone, role } = req.query
 
-            let allUsers = await usermanagement.find({}).exec();
+            let condition = {}
+            if(firstname) condition.firstname = firstname
+            if(lastname) condition.lastname = lastname
+            if(emailId) condition.emailId = emailId
+            if(phone) condition.phone = phone
+            if(role) condition.role = role
+
+            let allUsers = await usermanagement.find(condition).exec();
 
             if(!allUsers.length) return res.send({
                 message : message.success.message,

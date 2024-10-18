@@ -21,7 +21,7 @@ module.exports = (app) => {
             if(phone) condition.phone = phone
             if(role) condition.role = role
 
-            let allUsers = await usermanagement.find(condition).exec();
+            let allUsers = await usermanagement.find(condition,{password:0}).exec();
 
             if(!allUsers.length) return res.send({
                 message : message.success.message,

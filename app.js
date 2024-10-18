@@ -19,7 +19,10 @@ app.listen(process.env.PORT,()=>{
 })
 
 app.get('/',(req,res)=>{
-    res.send('hello')
+    res.send(`
+        <h1>Hello DigiAlpha</h1>
+        <h2>Please use postman to test other apis...<h2>
+    `)
 })
 
 require('./routes/getUsers')(app)

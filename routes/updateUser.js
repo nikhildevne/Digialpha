@@ -20,6 +20,9 @@ const updateUser = async (req, res) =>{
             status : message.statusCode.success,
         })
 
+        // ######## i have romoved this code because if user is sending one parameter then this code will throw error or send res back
+        
+        
         // const { error, value } = validate.userInfo.validate(req.body);
 
         // console.log(value)

@@ -20,7 +20,7 @@ app.listen(process.env.PORT,()=>{
 
 app.get('/',(req,res)=>{
     res.send(`
-        <h1>Hello DigiAlpha</h1>
+        <h1>Hello Pratik sir</h1>
         <h2>Please use postman to test other apis...<h2>
     `)
 })

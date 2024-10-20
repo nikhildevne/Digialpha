@@ -1,5 +1,5 @@
 ################################          APIs Hosted on AWS EC2 environ using AWS Beanstalk used services EC2, IAM, AWS PIPELINE #################################
-###############################            EC2 Host url ::: http://digialpha.us-east-1.elasticbeanstalk.com/                 #####################################
+###############################            AWS Host url ::: http://digialpha.us-east-1.elasticbeanstalk.com/                 #####################################
 
 ####################     Master User Note : Dont Delete This user  #################
 {                   
